@@ -42,28 +42,7 @@
                     <p>バンド名B</p>
                 </div>
             </div>
-            <div class="timetable-container">
-                <div class="timetable-row">
-                    <div class="timetable-cell red">
-                        <p>バンド名1</p>
-                    </div>
-                    <div class="timetable-cell green">
-                        <p>バンド名2</p>
-                    </div>
-                    <div class="timetable-cell blue">
-                        <p>バンド名3</p>
-                    </div>
-                    <div class="timetable-cell orange">
-                        <p>バンド名4</p>
-                    </div>
-                    <div class="timetable-cell red">
-                        <p>バンド名5</p>
-                    </div>
-                    <div class="timetable-cell green">
-                        <p>バンド名6</p>
-                    </div>
-                </div>
-                <!-- 他のバンドも同様に追加 -->
+            <div class="timetable-container" id="timetable-container">
             </div>
         </div>
 
@@ -88,7 +67,7 @@
 
     <script>
         // 外部ファイルから曲のデータを読み込む
-        fetch('songs.json')
+        fetch('song.json')
             .then(response => response.json())
             .then(songs => {
 
