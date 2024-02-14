@@ -1,4 +1,4 @@
-// 曲のデータを定義します
+// 曲のデータを定義
 const songs = [
     { title: "ないものねだり,またね", artist: "コーギー", category: "red" },
     { title: "奏,水流のロック,グッドな音楽を,オー!リバル", artist: "Cadence keynotes", category: "green" },
@@ -50,7 +50,7 @@ const songs = [
     // 他の曲も同様に追加
 ];
 
-// HTMLに曲のデータを反映する関数を定義します
+// HTMLに曲のデータを反映する関数を定義
 function renderTimetable() {
     const timetableContainer = document.getElementById('timetable-container');
     songs.forEach(song => {
@@ -61,7 +61,7 @@ function renderTimetable() {
     });
 }
 
-// ページが読み込まれたときに曲表を生成します
+// ページが読み込まれたときに曲表を生成
 window.onload = function() {
     renderTimetable();
 };
