@@ -189,13 +189,12 @@ h5 {
     background-color: #FBCC9A;
 }
 
-.anime {
+.ml4 {
     position: relative;
     font-weight: 900;
     font-size: 4.5em;
-}
-
-.anime .letters {
+  }
+  .ml4 .letters {
     position: absolute;
     margin: auto;
     left: 0;
