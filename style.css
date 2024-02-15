@@ -92,6 +92,13 @@ footer {
     bottom: 0;
 }
 
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    color: #666666;
+}
+
 h2 {
     font-family: 'Inter', sans-serif;
     font-weight: bold;
@@ -181,3 +188,18 @@ h5 {
 .orange {
     background-color: #FBCC9A;
 }
+
+.anime {
+    position: relative;
+    font-weight: 900;
+    font-size: 4.5em;
+}
+
+.anime .letters {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0.3em;
+    right: 0;
+    opacity: 0; 
+  }
