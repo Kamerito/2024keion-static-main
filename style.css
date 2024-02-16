@@ -2,7 +2,6 @@
 
 * {
     box-sizing: border-box;
-    max-width: 100%;
 }
 
 
@@ -31,7 +30,7 @@ header a {
 
 
 main {
-    padding-top: 70px;
+    padding-top: 60px;
 }
 
 stream-board {
@@ -207,4 +206,117 @@ h5 {
     right: 0;
     opacity: 0;
     max-width: 25vw;
+}
+
+/* レスポンシブ */
+@media screen and (max-width: 768px) {
+
+
+    header {
+        background-color: #FFFFFF;
+        position: fixed;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    header a {
+        color: #36BAC4;
+        font-size: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #intro {
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    #intro h1 {
+        margin-bottom: 0vh;
+    }
+
+    img {
+        height: 20vh;
+    }
+
+    h1 {
+        font-family: 'Inter', sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        color: #666666;
+    }
+
+    h2 {
+        font-family: 'Inter', sans-serif;
+        font-weight: bold;
+        font-size: 10px;
+        color: #666666;
+    }
+
+    p {
+        font-family: 'Inter', sans-serif;
+        font-weight: bold;
+        font-size: 10px;
+        color: #FFFFFF;
+    }
+
+    h3 {
+        font-family: 'Zen Kaku Gothic New', sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        color: #666666;
+    }
+
+    h4 {
+        font-family: 'Zen Kaku Gothic New', sans-serif;
+        font-weight: bold;
+        font-size: 10px;
+        color: #666666;
+    }
+
+    h5 {
+        font-family: 'Zen Kaku Gothic New', sans-serif;
+        font-weight: bold;
+        font-size: 8px;
+        color: #1a1a1a;
+    }
+
+    .ml4 {
+        display: none;
+    }
+
+    .timetable-cell {
+        flex: 1;
+        box-sizing: border-box;
+        border-radius: 10px;
+        margin: 5px;
+        padding: 10px;
+        width: 50vw;
+    }
+
+    .substitute-text {
+        display: block;
+    }
+
+    .timetable-container {
+        height: 400px;
+        overflow-y: auto;
+        flex-direction: column;
+        border: 2px solid #36BAC4;
+        padding: 20px;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-bottom: 10vh;
+        scrollbar-width: none;
+    }    
+
+    iframe {
+        width: 50vw;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .substitute-text {
+        display: none;
+    }
 }
