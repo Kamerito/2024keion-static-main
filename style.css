@@ -208,6 +208,10 @@ h5 {
     max-width: 25vw;
 }
 
+iframe {
+    width: 50vw;
+}
+
 /* レスポンシブ */
 @media screen and (max-width: 768px) {
 
