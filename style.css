@@ -100,7 +100,7 @@ footer {
 h1 {
     font-family: 'Inter', sans-serif;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 40px;
     color: #666666;
 }
 
@@ -197,7 +197,6 @@ h5 {
 
 .ml4 {
     position: relative;
-    font-size: 2.5em;
 }
 
 .ml4 .letters {
@@ -207,4 +206,5 @@ h5 {
     top: -10vh;
     right: 0;
     opacity: 0;
+    max-width: 25vw;
 }
