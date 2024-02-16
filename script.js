@@ -45,10 +45,6 @@ const songs = [
     { title: "未定", artist: "未定", category: "red" },
     { title: "part of me", artist: "未定", category: "red" },
     { title: "なんか", artist: "未定", category: "red" },
-
-
-    
-    // 他の曲も同様に追加
 ];
 
 // HTMLに曲のデータを反映する関数を定義
