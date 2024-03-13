@@ -22,7 +22,7 @@ header {
 }
 
 header a {
-    color: #36BAC4;
+    color: #fcbcbc;
     font-size: 30px;
     margin-left: 10px;
     margin-right: 10px;
@@ -37,9 +37,6 @@ stream-board {
     display: flex;
 }
 
-img {
-    height: 20vh;
-}
 
 #intro {
     text-align: center;
@@ -61,26 +58,11 @@ img {
 }
 
 #news div {
-    border: 2px solid #36BAC4;
+    border: 2px solid #fcbcbc;
     padding: 20px;
     margin-left: 20%;
     margin-right: 20%;
 }
-
-
-#sponsor div {
-    border: 2px solid #36BAC4;
-    padding: 20px;
-    margin-left: 20%;
-    margin-right: 20%;
-}
-
-#sponsor img {
-    width: 100%;
-    max-width: 100%;
-    margin-top: 10px;
-}
-
 
 #comments {
     list-style-type: none;
@@ -99,7 +81,7 @@ footer {
 h1 {
     font-family: 'Inter', sans-serif;
     font-weight: bold;
-    font-size: 35px;
+    font-size: 30px;
     color: #666666;
 }
 
@@ -139,7 +121,7 @@ h5 {
 }
 
 #stream-board {
-    border: 2px solid #36BAC4;
+    border: 2px solid #fcbcbc;
     padding: 20px;
     margin-left: 20%;
     margin-right: 20%;
@@ -156,7 +138,7 @@ h5 {
     height: 400px;
     overflow-y: auto;
     flex-direction: column;
-    border: 2px solid #36BAC4;
+    border: 2px solid #fcbcbc;
     padding: 20px;
     margin-left: 20%;
     margin-right: 20%;
@@ -179,19 +161,19 @@ h5 {
 }
 
 .red {
-    background-color: #FFC9D2;
+    background-color: #ff9bac;
 }
 
 .green {
-    background-color: #d1e9ba;
+    background-color: #b6ea84;
 }
 
 .blue {
-    background-color: #36BAC4;
+    background-color: #3dd0db;
 }
 
 .orange {
-    background-color: #FBCC9A;
+    background-color: #ffb86d;
 }
 
 .ml4 {
@@ -215,6 +197,12 @@ iframe {
 /* レスポンシブ */
 @media screen and (max-width: 768px) {
 
+    body {
+        background-image: url('phone-back.webp');
+        background-size: contain;
+        background-repeat: repeat-y;
+        background-size:100%; 
+    }
 
     header {
         background-color: #FFFFFF;
@@ -239,9 +227,40 @@ iframe {
         margin-bottom: 0vh;
     }
 
-    img {
-        height: 20vh;
+    header a {
+        color: #36BAC4;
+        font-size: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
+
+    #stream-board {
+        border: 2px solid #36BAC4;
+        padding: 20px;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-bottom: 5%;
+    }
+
+    #news div {
+        border: 2px solid #36BAC4;
+        padding: 20px;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .timetable-container {
+        height: 400px;
+        overflow-y: auto;
+        flex-direction: column;
+        border: 2px solid #36BAC4;
+        padding: 20px;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-bottom: 10vh;
+        scrollbar-width: none;
+    }
+
 
     h1 {
         font-family: 'Inter', sans-serif;
@@ -306,21 +325,54 @@ iframe {
         height: 400px;
         overflow-y: auto;
         flex-direction: column;
-        border: 2px solid #36BAC4;
+        border: 2px solid #fcbcbc;
         padding: 20px;
         margin-left: 20%;
         margin-right: 20%;
         margin-bottom: 10vh;
         scrollbar-width: none;
-    }    
+    }
 
     iframe {
         width: 50vw;
     }
+
+    .pc {
+        display: none !important;
+    }
+
+    .sp {
+        display: block !important;
+        height: 40vh;
+        text-align: center;
+        margin: auto;
+    }
+
 }
 
+
+
 @media screen and (min-width: 769px) {
+
+    body {
+        background-image: url('pc-back.webp');
+        background-repeat: repeat-y;
+        background-size: contain;
+    }
+
+    .pc {
+        display: block !important;
+        height: 40vh;
+        text-align: center;
+        margin: auto;
+    }
+
+    .sp {
+        display: none !important;
+    }
+
     .substitute-text {
         display: none;
     }
+
 }

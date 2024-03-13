@@ -3,14 +3,14 @@ const songs = [
     { title: "ないものねだり,またね", artist: "コーギー", category: "orange" },
     { title: "奏,水流のロック,グッドな音楽を,オー!リバル", artist: "Cadence keynotes", category: "green" },
     { title: "言って。 晴る", artist: "嘘つき達", category: "green" },
-    { title: "飛行艇", artist: "Reach", category: "green" },
-    { title: "ロストワンの号哭", artist: "θ", category: "green" },
-    { title: "かわE,Tank top of the world,あつまれ☆パーティーピーポー,ハッピーウェディング前ソング", artist: "たつしくる", category: "blue" },
+    { title: "シルエット", artist: "Reach", category: "green" },
+    { title: "ロストワンの号哭,夜咄ディセイブ", artist: "θ", category: "green" },
+    { title: "かわE,Tank top of the world,あつまれ☆パーティーピーポー,ハッピーウェディング前ソング", artist: "たつしくる", category: "orange" },
     { title: "ちゅ、多様性,瞬間センチメンタル", artist: "Fumpy", category: "green" },
     { title: "かくれんぼ,impulse", artist: "MAD BATTERS", category: "green" },
     { title: "トウキョウシャンディランデヴ", artist: "シャッフルA", category: "orange" },
     { title: "HE IS MINE,愛の標識,インフェルノ,Mela!", artist: "センサーシップ", category: "orange" },
-    { title: "SPECIALS", artist: "逆ら番", category: "green" },
+    { title: "SPECIALZ", artist: "逆ら番", category: "green" },
     { title: "ロビンソン", artist: "キラキラ共和国", category: "green" },
     { title: "stardom", artist: "未定", category: "orange" },
     { title: "ホワイトノイズ", artist: "skept", category: "orange" },
@@ -18,6 +18,9 @@ const songs = [
     { title: "秒針を噛む", artist: "未定", category: "orange" },
     { title: "Rapport", artist: "未定", category: "green" },
     { title: "青のすみか,The Beginning", artist: "coincidence", category: "orange" },
+    { title: "新宝島", artist: "CtoC", category: "orange" },
+    { title: "American ldiot, Dream on, the house of the rising sun", artist: "irene's", category: "orange" },
+    { title: "人生のメリーゴーランド,Just the two of us", artist: "dat punk", category: "orange" },
     { title: "群青讃歌,アカシア", artist: "のこったーず", category: "red" },
     { title: "シンデレラボーイ,DENKOUSEKKA,女神", artist: "からあげどっぐ", category: "red" },
     { title: "バトンロード,栞", artist: "シークレッツ", category: "red" },
@@ -29,6 +32,7 @@ const songs = [
     { title: "StaRt", artist: "いいえ", category: "red" },
     { title: "PAiNT it BLACK", artist: "鉄腕BiSH", category: "red" },
     { title: "ベノム,ヒバナ", artist: "非力ハムスター", category: "red" },
+    { title: "未定", artist: "fracture", category: "red" },
     { title: "くらべられっ子", artist: "未定", category: "red" },
     { title: "絆の奇跡", artist: "未定", category: "red" },
     { title: "夕暮れ沿い、", artist: "未定", category: "red" },
@@ -38,10 +42,11 @@ const songs = [
     { title: "Stand out fit in", artist: "未定", category: "red" },
     { title: "心做し,ただ声一つ", artist: "渦潮ぽてと+", category: "green" },
     { title: "HANABI", artist: "Bocci", category: "green" },
-    { title: "未定", artist: "霞草", category: "blue" },
+    { title: "未定", artist: "霞草", category: "green" },
     { title: "欲望に満ちた少年団", artist: "Who's ", category: "green" },
     { title: "灰色と青", artist: "Amber", category: "green" },
     { title: "春を待つ feat.倚水", artist: "無", category: "red" },
+    { title: "未定", artist: "テトラポット", category: "red" },
     { title: "未定", artist: "未定", category: "red" },
     { title: "part of me", artist: "未定", category: "red" },
     { title: "なんか", artist: "未定", category: "red" },
@@ -53,7 +58,7 @@ function renderTimetable() {
     songs.forEach(song => {
         const cell = document.createElement('div');
         cell.className = `timetable-cell ${song.category}`;
-        cell.innerHTML = `<p>${song.artist} - ${song.title}</p>`;
+        cell.innerHTML = `<p>${song.artist} / ${song.title}</p>`;
         timetableContainer.appendChild(cell);
     });
 }
